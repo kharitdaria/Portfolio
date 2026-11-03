@@ -1,10 +1,1 @@
-document.querySelector("button")
-.onclick=function(){
-
-document.querySelector("#projects")
-.scrollIntoView({
-behavior:"smooth"
-});
-
-};
-
+console.log("NOVAÏ Studio loaded");
