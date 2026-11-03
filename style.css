@@ -1,0 +1,209 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background:#f4efeb;
+    color:#111;
+}
+
+
+header {
+
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 80px;
+
+}
+
+
+.logo {
+
+    font-size:32px;
+    letter-spacing:5px;
+    font-weight:600;
+
+}
+
+
+.logo span {
+
+    display:block;
+    font-size:11px;
+    letter-spacing:7px;
+
+}
+
+
+nav {
+
+    display:flex;
+    gap:40px;
+
+}
+
+
+nav a {
+
+    text-decoration:none;
+    color:#111;
+    font-size:14px;
+
+}
+
+
+header button {
+
+    border:1px solid #8f1d35;
+    background:none;
+    padding:14px 30px;
+    border-radius:30px;
+    color:#8f1d35;
+
+}
+
+
+.hero {
+
+    min-height:calc(100vh - 90px);
+    display:flex;
+    padding:50px 80px;
+
+}
+
+
+.content {
+
+    width:50%;
+    padding-top:80px;
+
+}
+
+
+.tag {
+
+    color:#8f1d35;
+    letter-spacing:2px;
+    font-size:13px;
+
+}
+
+
+h1 {
+
+    font-size:80px;
+    line-height:1.05;
+    font-weight:400;
+    margin:40px 0;
+
+}
+
+
+h1 span {
+
+    color:#8f1d35;
+
+}
+
+
+.description {
+
+    width:420px;
+    line-height:1.7;
+    color:#555;
+
+}
+
+
+.buttons {
+
+    margin-top:50px;
+    display:flex;
+    gap:20px;
+
+}
+
+
+.primary {
+
+    background:#8f1d35;
+    color:white;
+    border:none;
+    padding:18px 35px;
+    border-radius:30px;
+
+}
+
+
+.secondary {
+
+    background:none;
+    border:none;
+    border-bottom:1px solid #8f1d35;
+
+}
+
+
+
+.visual {
+
+    width:50%;
+    position:relative;
+
+}
+
+
+.circle {
+
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#8f1d35;
+    opacity:.15;
+    border-radius:50%;
+    right:50px;
+    top:80px;
+
+}
+
+
+.city {
+
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:250px;
+    background:
+    linear-gradient(
+    transparent,
+    rgba(80,20,30,.15)
+    );
+
+}
+
+
+.person {
+
+    position:absolute;
+    right:80px;
+    bottom:0;
+    width:500px;
+    height:650px;
+
+}
+
+
+footer {
+
+    position:absolute;
+    right:50px;
+    bottom:30px;
+    letter-spacing:3px;
+
+}
