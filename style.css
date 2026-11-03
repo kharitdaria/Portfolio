@@ -5,26 +5,32 @@ box-sizing:border-box;
 }
 
 
+html{
+scroll-behavior:smooth;
+}
+
+
 body{
 
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, sans-serif;
 
 background:
-radial-gradient(circle at 70% 30%, 
-rgba(130,20,50,0.12),
-transparent 35%),
+radial-gradient(
+circle at 75% 30%,
+rgba(139,24,54,.18),
+transparent 35%
+),
 
 linear-gradient(
 120deg,
-#faf6f4,
-#eee3df
+#faf7f5,
+#eee4df
 );
 
 color:#151515;
 
-overflow:hidden;
-
 }
+
 
 
 
@@ -38,37 +44,23 @@ align-items:center;
 
 padding:0 7%;
 
-position:relative;
-
-z-index:5;
-
 }
-
 
 
 .logo{
 
-font-size:42px;
-
+font-size:38px;
 letter-spacing:8px;
 
-font-weight:600;
-
-line-height:0.8;
-
 }
-
 
 
 .logo span{
 
 display:block;
-
-font-size:12px;
-
+font-size:11px;
 letter-spacing:8px;
-
-margin-top:18px;
+margin-top:12px;
 
 }
 
@@ -78,21 +70,18 @@ nav{
 
 display:flex;
 
-gap:45px;
+gap:40px;
 
 margin-left:80px;
 
 }
 
 
-
 nav a{
 
 text-decoration:none;
 
-color:#171717;
-
-font-size:16px;
+color:#222;
 
 }
 
@@ -100,27 +89,26 @@ font-size:16px;
 
 .talk{
 
+
 margin-left:auto;
 
-background:none;
-
 border:1px solid #8b1836;
+
+background:white;
+
+color:#8b1836;
 
 border-radius:30px;
 
 padding:15px 35px;
 
-font-size:15px;
-
-color:#8b1836;
-
-cursor:pointer;
-
 }
 
 
 
+
 .hero{
+
 
 height:calc(100vh - 110px);
 
@@ -128,17 +116,18 @@ position:relative;
 
 padding-left:8%;
 
-padding-top:80px;
+padding-top:100px;
+
 
 }
 
 
 
-.content{
+
+.hero-content{
 
 position:relative;
-
-z-index:3;
+z-index:2;
 
 }
 
@@ -148,13 +137,12 @@ z-index:3;
 
 color:#8b1836;
 
-letter-spacing:7px;
+letter-spacing:6px;
 
-font-size:14px;
-
-margin-bottom:40px;
+margin-bottom:35px;
 
 }
+
 
 
 
@@ -162,11 +150,9 @@ h1{
 
 font-size:76px;
 
-font-weight:600;
-
 line-height:1.05;
 
-letter-spacing:-2px;
+font-weight:600;
 
 }
 
@@ -180,13 +166,13 @@ color:#8b1836;
 
 
 
-p{
-
-margin-top:35px;
+.hero p{
 
 font-size:22px;
 
 line-height:1.5;
+
+margin-top:30px;
 
 color:#555;
 
@@ -194,11 +180,12 @@ color:#555;
 
 
 
+
 .buttons{
 
 display:flex;
 
-gap:30px;
+gap:35px;
 
 margin-top:45px;
 
@@ -206,39 +193,83 @@ margin-top:45px;
 
 
 
-.projects{
+.projects-btn{
 
 background:#8b1836;
 
 color:white;
 
-border:none;
+padding:20px 45px;
 
 border-radius:40px;
 
-padding:20px 45px;
-
-font-size:18px;
+text-decoration:none;
 
 }
 
 
 
-.about{
+.about-btn{
 
-background:none;
+padding-top:20px;
 
-border:none;
+color:#222;
 
 border-bottom:2px solid #8b1836;
 
-font-size:18px;
+text-decoration:none;
 
 }
 
 
 
-.decor{
+.glow{
+
+position:absolute;
+
+right:15%;
+
+top:100px;
+
+width:450px;
+
+height:450px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(139,24,54,.35),
+
+transparent 65%
+
+);
+
+}
+
+
+
+.est{
+
+position:absolute;
+
+right:40px;
+
+top:200px;
+
+writing-mode:vertical-rl;
+
+letter-spacing:5px;
+
+}
+
+
+
+.tech-line{
 
 position:absolute;
 
@@ -250,15 +281,15 @@ opacity:.5;
 
 
 
-.left{
+.left-line{
 
 left:0;
 
-top:100px;
+top:50px;
+
+height:550px;
 
 width:90px;
-
-height:500px;
 
 border-left:1px solid;
 
@@ -268,15 +299,15 @@ border-bottom:1px solid;
 
 
 
-.right{
+.right-line{
 
 right:0;
 
 top:0;
 
-width:100px;
-
 height:600px;
+
+width:100px;
 
 border-right:1px solid;
 
@@ -286,95 +317,81 @@ border-top:1px solid;
 
 
 
-.circle{
+.section{
 
-position:absolute;
-
-right:15%;
-
-top:180px;
-
-width:420px;
-
-height:420px;
-
-border-radius:50%;
-
-background:
-
-radial-gradient(
-circle,
-rgba(139,24,54,.35),
-transparent 65%
-);
+padding:120px 8%;
 
 }
 
 
 
-.est{
+.section h2{
 
-position:absolute;
+font-size:55px;
 
-right:4%;
-
-top:220px;
-
-writing-mode:vertical-rl;
-
-letter-spacing:5px;
-
-font-size:18px;
+margin-bottom:30px;
 
 }
 
 
 
-.bottom{
+.section p{
 
-position:absolute;
+font-size:20px;
 
-bottom:40px;
+line-height:1.6;
 
-left:8%;
+max-width:900px;
+
+}
+
+
+
+.cards{
 
 display:flex;
 
-gap:60px;
+gap:40px;
 
-font-size:14px;
-
-letter-spacing:4px;
-
-color:#777;
+margin-top:50px;
 
 }
 
 
+
+.cards div{
+
+width:30%;
+
+padding:35px;
+
+background:white;
+
+border-radius:20px;
+
+}
 
 
 @media(max-width:900px){
 
+nav{
+display:none;
+}
 
 h1{
-
 font-size:45px;
+}
+
+.cards{
+
+flex-direction:column;
 
 }
 
+.cards div{
 
-nav{
-
-display:none;
-
-}
-
-
-.circle{
-
-display:none;
+width:100%;
 
 }
-
 
 }
